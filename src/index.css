@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand-crimson: #EF0037;
+  --color-brand-crimson-hover: #D40031;
+  --color-brand-crimson-deep: #B8002A;
+  --color-brand-crimson-tint: #FFF0F3;
+  --color-brand-crimson-border: #F9B8C6;
+
+  --color-brand-teal: #1E9788;
+  --color-brand-teal-hover: #177D70;
+  --color-brand-teal-deep: #13675D;
+  --color-brand-teal-tint: #EEFAF8;
+  --color-brand-teal-border: #9FD9D0;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: #0F172A;
+    background-color: #F7F9F9;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

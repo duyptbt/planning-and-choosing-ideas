@@ -1,0 +1,8 @@
+{
+  "name": "Writing Task 2 - B1 (4.0 Plus): Planning and Choosing Ideas",
+  "description": "Interactive IELTS Writing Task 2 study module focusing on planning and choosing ideas at Level B1 (4.0 Plus).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
